@@ -1,0 +1,218 @@
+body { 
+    margin: 0;
+    font-family: 'Montagu Slab', serif;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+  
+@keyframes unroll2  { 
+    0% { transform: translateY(-500px) }
+   100% { transform: translateY(0px)  }
+}
+
+@keyframes rotate { 
+    0% { transform: rotate(30deg)}
+    100% { transform: rotate(-30deg)}
+}
+
+#content-content { 
+    position: absolute;
+    z-index: 2;
+}
+.upsideDowncircle { 
+    position: absolute;
+    margin-top: 25px;
+    z-index: 1;
+    background: linear-gradient(179.89deg, #FFF 0.09%, rgba(255, 255, 255, 0) 103.56%);
+    
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 80%;
+
+    border-radius: 9000px 9000px 0 0; 
+    
+}
+
+#rectangle { 
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    background: #F2F2F2;
+  
+}
+
+.rectangle1-light { 
+    background-image: linear-gradient(#F54D42, #EF8D34);
+    width: 89px;
+    animation-name: unroll2;
+    animation-duration: 3s;
+}
+  
+.rectangle2-light {
+    background-image: linear-gradient(#F8D548, #E4FE54, #B7FD51);
+    width: 89px; 
+    height: 466px;
+    animation-name: unroll2;
+    animation-duration: 2s;
+    
+}
+  
+  
+.rectangle3-light { 
+    background-image: linear-gradient(#76FBA2, #6EEBFC);
+    width: 89px; 
+    height: 233px;
+    animation-name: unroll2;
+    animation-duration: 2s;
+}
+  
+  
+.rectangle4-light { 
+    background-image: linear-gradient(#6EEBFC, #3A7BED);
+    width: 89px; 
+    height: 636px;
+    animation-name: unroll2;
+    animation-duration: 2s;
+}
+  
+.rectangle5-light { 
+    background-image: linear-gradient(#5012F5, #AE27F6);
+    width: 89px; 
+    animation-name: unroll2;
+    animation-duration: 3s;
+}
+
+
+#column2 { 
+    color: #121212;
+}
+#center { 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+
+#profile { 
+    width: 380px;
+    height: 380px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-top: 50px;
+
+}
+
+#row1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    width: 500px;
+} 
+
+
+
+
+.title { 
+    font-family: 'Montagu Slab 36pt';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 50px;
+    line-height: 64px;
+    background: linear-gradient(90deg, #F54D42 -2.53%, #EF8D34 29.26%, #76FBA2 54.7%, #3A7BED 80.24%, #AE27F6 98.93%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+
+    padding-top: 20px;
+
+}
+
+#row2 { 
+    font-family: 'Work Sans', sans-serif;
+    font-family: Work Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: -10px;
+
+}
+
+.head { 
+    font-family: 'Work Sans';
+    font-size: 15px;
+    font-style: normal;
+    /* font-weight: 700; */
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-top: 30px;
+
+
+}
+
+#row3 { 
+    margin-bottom: 0px;
+    padding-top: 0px;
+    padding-left: 15px;
+    margin-right: 100px;
+}
+
+.text-content { 
+    font-family: 'Work Sans';
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding-top: 0px;
+    margin-top: -5px;
+
+
+}
+
+.text { 
+  margin-top: 0px;
+}
+
+
+#back-arrow { 
+    padding-top: 20px;
+    padding-left: 20px;
+    cursor: pointer;
+}
+
+.special { 
+    margin-top: -12px;
+}
+
+
+a { 
+    font-weight: bold;
+    text-decoration: none;
+    color: #121212;
+}
+
+a:hover { 
+    color: #787777;
+}
+
+#chameleon { 
+  margin-left: -50px;
+  animation: rotate 2s infinite; 
+    animation-direction: alternate-reverse;
+    animation-timing-function: ease;
+}

@@ -1,0 +1,247 @@
+body { 
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #F2F2F2;
+    animation-name: backgrounds;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in;
+}
+
+@keyframes backgrounds { 
+    0% { background-color: #121212 }
+    25% { background-color: #5d5d5d}
+    50% { background-color: #828282}
+    75% { background-color: #bababa}
+    100% { background-color: #F2F2F2}
+  }
+  
+  
+@keyframes unroll2  { 
+    0% { transform: translateY(-500px);}
+    100% { transform: translateY(0px) }
+}
+
+@keyframes rotate { 
+    0% { transform: rotate(30deg)}
+    100% { transform: rotate(-30deg)}
+}
+
+@keyframes opacity { 
+    0% { opacity: 50%}
+    100% { opacity: 100%}
+}
+
+/* #row1 { 
+    animation-name: opacity;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+} */
+
+
+.logo1, .logo2 { 
+
+
+    animation: rotate 2s infinite; 
+    animation-direction: alternate-reverse;
+    animation-timing-function: ease;
+    margin-bottom: -55px;
+    margin-right: -50px;
+    cursor: pointer;
+}
+
+.hidden { 
+    display: none;
+}
+
+
+#light-home { 
+    font-family: 'Montagu Slab', serif;
+    background-color: #F2F2F2;
+
+    width: 100%; 
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+    animation-name: backgrounds;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in;
+
+}
+
+
+
+#center {
+    position: absolute;
+    background: transparent;
+    text-align: right;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    margin-top: -20px;
+}
+
+
+@keyframes gradient { 
+    0% { background-position: 0% 50% }
+    50% { background-position: 100% 50% }
+    100% { background-position: 0% 50% }
+
+}
+
+
+#rectangle { 
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+
+    animation: gradient 5s ease infinite; 
+
+
+}
+
+
+a { 
+    text-decoration: none;
+    text-decoration-color: #787777;
+    color: #787777;
+}
+
+#row3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 10px;
+}
+
+.nav-button1, .nav-button2 { 
+    padding: 8px;
+    width: 125px;
+    cursor: pointer;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    font-family: 'Montagu Slab 36pt', serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+}
+
+.nav-button1:hover, .nav-button2:hover { 
+    color: #121212;
+    background: linear-gradient(108.01deg, #F64E43 0%, #F17F38 20%, #F6DC4B 39.83%, #B7FD51 53.45%, #76FAAF 70.39%, #6DE7FC 79.28%, #771BF6 95.52%);
+    border: 1px solid #000000;
+    box-sizing: border-box;
+} 
+
+.rectangle1-light { 
+    background: linear-gradient(#F54D42, #EF8D34);
+    width: 89px;
+    height: 100%;
+    animation-name: unroll2;
+    animation-duration: 3s;
+}
+
+.rectangle2-light {
+    background-image: linear-gradient(#F8D548, #E4FE54, #B7FD51);
+    width: 89px; 
+    height: 466px;
+    animation-name: unroll2;
+    animation-duration: 2s;
+
+}
+
+
+.rectangle3-light { 
+    background-image: linear-gradient(#76FBA2, #6EEBFC);
+    width: 89px; 
+    height: 233px;
+    animation-name: unroll2;
+    animation-duration: 2s;
+}
+
+
+.rectangle4-light { 
+    background-image: linear-gradient(#6EEBFC, #3A7BED);
+    width: 89px; 
+    height: 636px;
+    animation-name: unroll2;
+    animation-duration: 2s;
+}
+
+.rectangle5-light { 
+    background-image: linear-gradient(#5012F5, #AE27F6);
+    width: 89px; 
+    height: 100%;
+    animation-name: unroll2;
+    animation-duration: 3s;
+}
+
+
+
+#circle { 
+    position: absolute;
+    z-index: 1;
+    width: 90%;
+    height: 50%;
+    background: linear-gradient(179.89deg, #FFF 0.09%, rgba(255, 255, 255, 0) 103.56%);
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 500px;
+    width: 60%;
+    border-radius: 10000px 10000px 0 0;  
+
+
+}
+
+#copyright { 
+    font-family: 'Montagu Slab 36pt', serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px; 
+
+    position: absolute;
+    z-index: 3;
+    bottom: 0;
+    right: 5px;
+}
+
+.title { 
+    font-family: 'Montagu Slab 36pt';
+    font-style: normal;
+    font-weight: 450;
+    font-size: 100px;
+    line-height: 128px;
+    margin-top: -80px; 
+    margin-bottom: -130px;
+    color: #1E1E1E;
+
+}
+
+.subhead { 
+    font-family: Work Sans;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #787777;
+}
+
+
+
+// On click
+// Navigate to: "Frame 2";
+// Animate: Instant;
+animation-duration: 0ms;
