@@ -1,12 +1,3 @@
-// function toggleTheme() {
-// 	document.getElementById("light-home").classList.add("hidden");
-	 
-// }
- 
-
-// document.getElementById("start-button").onclick = toggleTheme;
- 
-// add animation to portfolio button (glowing)
 
 new TypeIt(".title", {
     speed: 100,
@@ -14,66 +5,33 @@ new TypeIt(".title", {
 }).go();
 
 
-function changeColor() { 
-	if (document.getElementById("changecolor").src = "assets/images/chameleonfinal.png") { 
-		document.getElementById("changecolor").src = "assets/images/chameleonrainbow.png";
-	} else (document.getElementById("changecolor").src = "assets/images/chameleonrainbow.png") 
-		{ 
-		document.getElementById("changecolor").src = "assets/images/chameleon1.png";
 
-	}
+// Global variables
+let index = 0; // counter variable
+const array = ["assets/images/chameleon1.png", "assets/images/chameleon2.png", "assets/images/chameleon3.png", 
+"assets/images/chameleon4.png", "assets/images/chameleon5.png", "assets/images/chameleon6.png", 
+"assets/images/chameleon7.png", "assets/images/chameleon8.png", "assets/images/chameleonfinal.png"]; // array of strings for your image paths
 
-	
+function changeColor() {
+    // update your counter variable
+        // make sure to check if you are at the end of your array and update accordingly
+    // set your .src property of the image to array[index]
+    // index ++ >8;
+    // document.getElementById("changecolor").src = array[index];
+    
+    
+    
+
+    if (index == array.length - 1) { 
+        index = 0;
+    }
+    else { 
+       index++;
+    }
+
+    document.getElementById("changecolor").src = array[index];
 }
 
-
-	
 document.getElementById("changecolor").onclick = changeColor;
-// document.getElementById("changeOrange").onclick = changeColor;
-
-// document.getElementById("changecolor").src = "assets/images/chameleon5.png";
-// document.getElementById("changecolor").src = "assets/images/chameleon6.png";
-// document.getElementById("changecolor").src = "assets/images/chameleon7.png";
-	// document.getElementById("changecolor").src = "assets/images/chameleon8.png";
 
 
-
-	// function scroll() { 
-// 	window.scrollTo(500,0);
-// }
-
-// document.getElementById("scroll").onclick = scroll;
-
-
-// jump('.title', {
-// 	duration: 1000,
-// 	offset: 0,
-// 	callback: undefined,
-// 	easing: easeInOutQuad,
-// 	a11y: false
-// })
-
-// if (document.getElementById("changecolor").src = "assets/images/chameleon1.png");
-	
-	// { 
-	// 	document.getElementById("changecolor").src = "assets/images/chameleon2.png";
-	// }
-	// else 
-	// {
-	// 	document.getElementById("changecolor").src = "assets/images/chameleon3.png";
-	// }
-	
-	// document.getElementById("changecolor").src = "assets/images/chameleon4.png";
-	// 
-
-
-
-
-
-// function changeColor() {
-// 	document.getElementById("changecolor").src = "assets/images/chameleonrainbow.png";
-// 	// document.getElementById("changecolor").src = "assets/images/chameleon5.png";
-// 	// document.getElementById("changecolor").src = "assets/images/chameleon6.png";
-// 	// document.getElementById("changecolor").src = "assets/images/chameleon7.png";
-// 	// document.getElementById("changecolor").src = "assets/images/chameleon8.png";
-// }
