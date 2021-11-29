@@ -217,3 +217,16 @@ a:hover {
     animation-timing-function: ease;
     cursor: pointer;
 }
+
+#copyright { 
+    font-family: 'Montagu Slab 36pt', serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px; 
+
+    position: absolute;
+    z-index: 3;
+    bottom: 0;
+    right: 5px;
+}
